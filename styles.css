@@ -5,6 +5,18 @@ body {
   margin: 0;
 }
 
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #1b1b32;
+  display: flex;
+  justify-content: space-between; /* Add space between children */
+  align-items: center; /* Vertically center children */
+  position: fixed; /* Fix the header to the top of the viewport */
+  top: 0; /* Position at the top */
+  left: 0; /* Position at the left */
+  z-index: 1000; /* Ensure it appears above other content */
+}
 
 #logo {
   width: max(100px, 18vw);
