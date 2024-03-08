@@ -43,6 +43,10 @@ nav > ul > li {
   display: block;
 }
 
+li > a {
+  color: #ffffff; /* Change this to your desired color with sufficient contrast */
+}
+
 h1, h2 {
   font-family: Verdana, Tahoma;
 }
