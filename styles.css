@@ -32,9 +32,16 @@ header {
   display: flex;
 }
 
+/* Adjust h1 to wrap text and align center */
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  text-align: center; /* Align text to the center */
+}
+
+/* Add padding to main content */
+main {
+  padding-top: 50px; /* Adjust as needed to ensure the "Student Info" section header is fully visible */
 }
 
 nav {
