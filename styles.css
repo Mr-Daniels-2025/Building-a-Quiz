@@ -50,9 +50,21 @@ nav {
   height: 50px;
 }
 
+/* Update navigation list to wrap content and align text */
 nav > ul {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap; /* Allow content to wrap */
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+  padding-inline-start: 0; /* Remove default padding */
+  margin-block: 0; /* Remove default margin */
+  height: 100%; /* Ensure full height */
+}
+
+nav > ul > li {
+  list-style: none; /* Remove default list style */
+  padding: 0.2rem; /* Add padding as needed */
+  margin: 0 0.5rem; /* Add margin as needed */
 }
 
 nav > ul > li {
