@@ -43,8 +43,16 @@ nav > ul > li {
   display: block;
 }
 
+/* Remove underline from anchor tags within list items */
 li > a {
-  color: #ffffff; /* Change this to your desired color with sufficient contrast */
+  text-decoration: none;
+}
+
+/* Style navigation list elements on hover */
+nav > ul > li:hover {
+  background-color: #dfdfe2; /* Change to the desired background color */
+  color: #1b1b32; /* Change to the desired text color */
+  cursor: pointer; /* Change cursor to pointer */
 }
 
 h1, h2 {
