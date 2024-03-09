@@ -10,38 +10,23 @@ header {
   height: 50px;
   background-color: #1b1b32;
   display: flex;
-  justify-content: space-between; /* Add space between children */
-  align-items: center; /* Vertically center children */
-  position: fixed; /* Fix the header to the top of the viewport */
-  top: 0; /* Position at the top */
-  left: 0; /* Position at the left */
-  z-index: 1000; /* Ensure it appears above other content */
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
 }
 
 #logo {
   width: max(100px, 18vw);
   background-color: #0a0a23;
-  aspect-ratio: 35/4;
+  aspect-ratio: 35 / 4;
   padding: 0.4rem;
 }
 
-header {
-  height: 50px;
-  width: 100%;
-  background-color: #1b1b32;
-  display: flex;
-}
-
-/* Adjust h1 to wrap text and align center */
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
-  text-align: center; /* Align text to the center */
-}
-
-/* Add padding to main content */
-main {
-  padding-top: 50px; /* Adjust as needed to ensure the "Student Info" section header is fully visible */
+  text-align: center;
 }
 
 nav {
@@ -50,21 +35,14 @@ nav {
   height: 50px;
 }
 
-/* Update navigation list to wrap content and align text */
 nav > ul {
   display: flex;
-  flex-wrap: wrap; /* Allow content to wrap */
-  justify-content: center; /* Horizontally center items */
-  align-items: center; /* Vertically center items */
-  padding-inline-start: 0; /* Remove default padding */
-  margin-block: 0; /* Remove default margin */
-  height: 100%; /* Ensure full height */
-}
-
-nav > ul > li {
-  list-style: none; /* Remove default list style */
-  padding: 0.2rem; /* Add padding as needed */
-  margin: 0 0.5rem; /* Add margin as needed */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
 }
 
 nav > ul > li {
@@ -74,44 +52,40 @@ nav > ul > li {
   display: block;
 }
 
-/* Remove underline from anchor tags within list items */
+nav > ul > li:hover {
+  background-color: #dfdfe2;
+  color: #1b1b32;
+  cursor: pointer;
+}
+
 li > a {
+  color: inherit;
   text-decoration: none;
 }
 
-/* Style navigation list elements on hover */
-nav > ul > li:hover {
-  background-color: #dfdfe2; /* Change to the desired background color */
-  color: #1b1b32; /* Change to the desired text color */
-  cursor: pointer; /* Change cursor to pointer */
+main {
+  padding-top: 50px;
 }
 
 section {
   width: 80%;
+  margin: 0 auto 10px auto;
   max-width: 600px;
-  margin: 0 auto 10px auto; /* Center horizontally and add 10px bottom margin */
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: Verdana, Tahoma;
 }
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
-  margin-top: 0;
+  margin-top: 0px;
   padding-top: 60px;
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+.info {
+  padding: 10px 0 0 5px;
 }
 
 .formrow {
@@ -127,13 +101,18 @@ input {
   font-size: 13px;
 }
 
-.info {
-  padding-top: 1;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 1;
-}
-
 p::before {
   content: "Question #";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
