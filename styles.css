@@ -101,10 +101,15 @@ input {
   font-size: 13px;
 }
 
+.info input,
 .info label {
-  width: 10%;
-  min-width: 55px; 
+  display: inline-block;
 }
+
+.info label {
+  text-align: right;
+}
+
 
 p::before {
   content: "Question #";
